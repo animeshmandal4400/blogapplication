@@ -1,0 +1,14 @@
+<div *ngIf="blogPost" class="post-details-container mt-4">
+  <h2 class="post-title">{{ blogPost.title }}</h2>
+
+  <div class="post-meta">
+    <p class="text-muted">Author: {{ blogPost.author }}</p>
+    <p class="text-muted">Date: {{ blogPost.date | date }}</p>
+  </div>
+
+  <div class="post-content">
+    <p class="blog-content">{{ blogPost.content }}</p>
+  </div>
+
+  <app-comment [blogPost]="blogPost"></app-comment>
+</div>

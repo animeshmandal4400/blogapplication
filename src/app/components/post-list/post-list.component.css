@@ -1,0 +1,50 @@
+.post-container {
+  background-color: #44355B;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-container:hover {
+  transform: scale(1.02);
+}
+
+.post-header {
+  margin-bottom: 15px;
+}
+
+.post-header h2 {
+  font-size: 28px;
+  color: #fff; 
+  margin-bottom: 8px;
+}
+
+.post-header .author {
+  color: #ddd; 
+  font-size: 16px;
+}
+
+.post-content .content {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.post-footer .date {
+  color: #ddd;
+  font-size: 16px;
+}
+
+.divider {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}

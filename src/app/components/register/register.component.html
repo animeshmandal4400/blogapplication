@@ -1,0 +1,40 @@
+<div class="login-container">
+  <div class="card">
+    <!-- Registration Form and Display Picture in the same flex row -->
+    <div class="card-content">
+      <!-- Left side: Registration Form -->
+      <div class="card-left">
+        <h1>Create an Account</h1>
+        <h3>Join our community today!</h3>
+        <form (ngSubmit)="onSubmit()" class="register-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" [(ngModel)]="user.username" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" [(ngModel)]="user.password" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="user.email" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="user.phoneNumber" class="form-control" required>
+          </div>
+
+          <button type="submit" class="custom-button primary">Register</button>
+        </form>
+      </div>
+
+      <!-- Right side: Display Picture (Optional) -->
+      <div class="card-right">
+        <img src="../../../assets/login-display2.jpg" alt="Display Picture" class="display-picture">
+      </div>
+    </div>
+  </div>
+</div>
